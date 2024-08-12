@@ -140,7 +140,7 @@ def save_to_database(df, user_email,boolean_query):
 
     db = sql.connect(
         #host="192.168.0.195",
-        host="localhost",
+        host="146.148.69.66",
         user="root",
         password="root123",
         database="antony"
