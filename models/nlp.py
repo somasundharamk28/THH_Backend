@@ -12,7 +12,7 @@ from langchain_core.runnables import RunnablePassthrough
  
 def chat_with_sql(query):
  
-    # db= SQLDatabase.from_uri("mysql+mysqlconnector://root:root123@192.119568.0.:3306/antony")
+    # db= SQLDatabase.from_uri("mysql+mysqlconnector://root:root123@146.148.69.66:3306/antony")
     db= SQLDatabase.from_uri("mysql+mysqlconnector://root:root123@146.148.69.66:3306/antony")
     llm = ChatGoogleGenerativeAI(model='gemini-pro',temperature=0)
     generate_query = create_sql_query_chain(llm,db)
