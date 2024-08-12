@@ -7,7 +7,7 @@ def job_detail(jd, key, email):
     #global new_jdid
     a = datetime.now()
     mydb = mysql.connector.connect(
-        host="localhost",
+        host="146.148.69.66",
         user="root",
         database="antony",
         password="root123",
@@ -40,7 +40,7 @@ def job_detail(jd, key, email):
 def sql_data_push(df):
     connection = mysql.connector.connect(
         user="root",
-        host="localhost",
+        host="146.148.69.66",
         database="antony",
         password="root123",
         port="3306",
@@ -86,7 +86,7 @@ def sql_data_push(df):
 def connect_to_database():
     try:
         connection = mysql.connector.connect(
-            host="localhost",
+            host="146.148.69.66",
             user="root",
             password="root123",
             database="antony",
@@ -103,7 +103,7 @@ import pandas as pd
 def connect_to_database():
     try:
         connection = sql.connect(
-            host="localhost",
+            host="146.148.69.66",
             user="root",
             password="root123",
             database="antony",
