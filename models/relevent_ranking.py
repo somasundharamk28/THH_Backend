@@ -158,7 +158,7 @@ from functools import lru_cache
 def db_retrieve(ID, Name):
     try:
         mydb = mysql.connector.connect(
-            host="localhost",
+            host="146.148.69.66",
             user="root",
             database="antony",
             password="root123",
