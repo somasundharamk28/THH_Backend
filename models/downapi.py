@@ -10,7 +10,7 @@ def download_api_resumes(email_id, jd_id):
     try:
         # Connect to the MySQL database
         mydb = mysql.connector.connect(
-            host='localhost',
+            host='146.148.69.66',
             user='root',
             password='root123',
             database='antony'
