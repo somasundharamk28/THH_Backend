@@ -63,7 +63,7 @@ import pandas as pd
 def connect_to_database():
     try:
         connection = sql.connect(
-            host="localhost",
+            host="146.148.69.66",
             user="root",
             password="root123",
             database="antony",
