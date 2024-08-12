@@ -42,7 +42,7 @@ final_job_id=None
 
 connection = sql.connect(
         user="root",
-        host="localhost",
+        host="146.148.69.66",
         database="antony",
         password="root123",
         port="3306",
@@ -50,12 +50,12 @@ connection = sql.connect(
     )
 cursor = connection.cursor()
 create_tables_if_not_exist(cursor)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:root123@localhost:3306/antony'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:root123@146.148.69.66:3306/antony'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SECRET_KEY'] = 'tucEDtE44BbQLv7tXCivZkn1DbmKGsYb'
 
  
-nlp = spacy.load("model-best")
+nlp = spacy.load("/app/model-best")
  
 result_df=None
 api_rank=None
@@ -684,4 +684,4 @@ def default():
     return jsonify("hello world")
 
 if __name__ == '__main__':
-      app.run(debug=True,host="localhost",port=4000)
+      app.run(debug=True,host="0.0.0.0",port=8082)
