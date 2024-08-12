@@ -8,7 +8,7 @@ def get_user_role_and_jobs(email,table):
     try:
         # Connect to the MySQL database
         conn = mysql.connector.connect(
-            host='localhost',
+            host='146.148.69.66',
             user='root',
             password='root123',
             database='antony'
