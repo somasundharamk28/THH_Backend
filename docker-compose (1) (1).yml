@@ -1,0 +1,15 @@
+version: '3.9'
+
+services:
+  web:
+    build: .
+    ports:
+      - "8082:8082"
+    environment:
+      FLASK_ENV: development
+      DATABASE_URL: mysql+pymysql://root:root123@146.148.69.66:3306/antony
+    volumes:
+      - ./model-best:/app/model-best  # Adjusted to match your local directory structure
+
+volumes:
+  db_data:
